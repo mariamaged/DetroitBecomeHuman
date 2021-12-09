@@ -1,0 +1,66 @@
+newmtl Model001_Material001
+map_Kd 04.png
+
+newmtl Model001_Material002
+map_Kd 09.png
+
+newmtl Model001_Material003
+map_Kd 00.png
+
+newmtl Model001_Material004
+map_Kd 00.png
+
+newmtl Model001_Material005
+map_Kd 03.png
+
+newmtl Model001_Material006
+map_Kd Submesh_0_17_diffuse.png
+
+newmtl Model001_Material007
+map_Kd 08.png
+
+newmtl Model001_Material008
+map_Kd 00.png
+
+newmtl Model001_Material009
+map_Kd 07.png
+
+newmtl Model001_Material010
+map_Kd 06.png
+
+newmtl Model001_Material011
+map_Kd 09.png
+
+newmtl Model001_Material012
+map_Kd 03.png
+
+newmtl Model001_Material013
+map_Kd 00.png
+
+newmtl Model001_Material014
+map_Kd Submesh_0_11_diffuse.png
+
+newmtl Model001_Material015
+map_Kd 08.png
+
+newmtl Model001_Material016
+map_Kd 04.png
+
+newmtl Model001_Material017
+map_Kd 04.png
+
+newmtl Model001_Material018
+map_Kd 13.png
+
+newmtl Model001_Material019
+map_Kd 01.png
+
+newmtl Model001_Material020
+map_Kd 11.png
+
+newmtl Model001_Material021
+map_Kd 00.png
+
+newmtl Model001_Material022
+map_Kd 12.png
+
