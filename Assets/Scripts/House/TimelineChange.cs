@@ -9,8 +9,9 @@ public class TimelineChange : MonoBehaviour
     public PlayableDirector timelineCaptainTalks;
     public PlayableDirector timelineHouse;
     public AudioSource AudioSourceGamePlay;
-    public AudioClip clip;
+    public AudioSource[] AudioSource;
     public GameObject[] decisions;
+    public bool paused = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,18 +21,22 @@ public class TimelineChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(decisions[0].activeSelf)
+        if(decisions[0].activeSelf && !paused)
         {
-            AudioSourceGamePlay.clip = clip;
-            AudioSourceGamePlay.playOnAwake = false;
-            AudioSourceGamePlay.Play();
+            AudioSourceGamePlay.Pause();
+            AudioSource[0].Play();
+            paused = true;
             timelineHouse.playableGraph.GetRootPlayable(0).SetSpeed(0);
         }
     }
 
     public void PlayCaptainTalks()
     {
-        timelineCaptainTalks.Play();
+        paused = false;
+        AudioSource[0].Stop();
+        Debug.Log("Here Before");
         decisions[0].SetActive(false);
+        Debug.Log("Here After");
+        timelineCaptainTalks.Play();
     }
 }
