@@ -73,6 +73,7 @@ public class TimelineChange : MonoBehaviour
         else timelineSkipsCaptain.Stop();
         decisions[1].gameObject.SetActive(false);
         timelineTakesGun.Play();
+        AudioSourceGamePlay.Play();
     }
 
     public void PlaySkipsGun()
@@ -84,5 +85,6 @@ public class TimelineChange : MonoBehaviour
         else timelineSkipsCaptain.Stop();
         decisions[1].gameObject.SetActive(false);
         timelineSkipsGun.Play();
+        AudioSourceGamePlay.Play();
     }
 }
