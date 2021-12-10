@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.Playables;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class TimelineChange : MonoBehaviour
 {
 
@@ -41,6 +42,11 @@ public class TimelineChange : MonoBehaviour
             paused = true;
             if(TALKED_TO_CAPTAIN) timelineCaptainTalks.playableGraph.GetRootPlayable(0).SetSpeed(0);
             else timelineSkipsCaptain.playableGraph.GetRootPlayable(0).SetSpeed(0);
+        }
+
+        if((decisions[2].gameObject.activeSelf && !paused) || (decisions[3].gameObject.activeSelf && !paused))
+        {
+            SceneManager.LoadScene("RTSH");
         }
     }
 
